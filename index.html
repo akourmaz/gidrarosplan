@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>План продвижения gidraros.ru</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+/* Layout: фирменный стиль SEO AGENCY.GE / THE KURMAZ METHOD — тёмная основа, изумрудный акцент, стеклянные карточки; один столбец для чтения с телефона, этапы — вертикальная шкала с изумрудными узлами */
+:root{
+  --bg:#050505; --paper:#0C0F0E; --paper2:#131816; --ink:#F2F5F3; --ink2:#B4BDB8; --muted:#7D8883;
+  --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.18);
+  --accent:#34D399; --brand:#10B981; --on-brand:#03140C; --accent-soft:rgba(16,185,129,.11);
+  --glow:0 0 30px rgba(52,211,153,.3); --halo:rgba(16,185,129,.13);
+  --red:#F87171; --red-soft:rgba(239,68,68,.10);
+  --amber:#FBBF24; --amber-soft:rgba(251,191,36,.08);
+  --green:#34D399; --green-soft:rgba(16,185,129,.11);
+  --violet:#A78BFA;
+  --f-display:"Manrope","Segoe UI",system-ui,sans-serif;
+  --f-body:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
+  --bg:#F4F6F5; --paper:#FFFFFF; --paper2:#EBF0ED; --ink:#08100C; --ink2:#38433E; --muted:#65716B;
+  --line:rgba(8,16,12,.10); --line2:rgba(8,16,12,.22);
+  --accent:#047857; --brand:#10B981; --on-brand:#03140C; --accent-soft:rgba(16,185,129,.12);
+  --glow:none; --halo:rgba(16,185,129,.10);
+  --red:#B91C1C; --red-soft:#FDECEC;
+  --amber:#92400E; --amber-soft:#FEF3C7;
+  --green:#047857; --green-soft:rgba(16,185,129,.12);
+  --violet:#6D28D9;
+  color-scheme:light;
+}}
+:root[data-theme="light"]{
+  --bg:#F4F6F5; --paper:#FFFFFF; --paper2:#EBF0ED; --ink:#08100C; --ink2:#38433E; --muted:#65716B;
+  --line:rgba(8,16,12,.10); --line2:rgba(8,16,12,.22);
+  --accent:#047857; --brand:#10B981; --on-brand:#03140C; --accent-soft:rgba(16,185,129,.12);
+  --glow:none; --halo:rgba(16,185,129,.10);
+  --red:#B91C1C; --red-soft:#FDECEC;
+  --amber:#92400E; --amber-soft:#FEF3C7;
+  --green:#047857; --green-soft:rgba(16,185,129,.12);
+  --violet:#6D28D9;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:radial-gradient(1100px 520px at 15% -8%,var(--halo),transparent 65%) no-repeat,var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p,ul,ol{margin:0}
+ul,ol{padding-left:1.2em;display:grid;gap:8px}
+li::marker{color:var(--accent)}
+.wrap{max-width:900px;margin:0 auto;padding-inline:20px;padding-block:20px 72px;display:grid;gap:72px}
+@media (max-width:480px){.wrap{padding-inline:16px}}
+section{display:grid;gap:22px;scroll-margin-top:16px;min-width:0}
+.eyebrow{font-family:var(--f-mono);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h2{font-family:var(--f-display);font-weight:800;font-size:clamp(23px,4.2vw,34px);line-height:1.15;letter-spacing:-.01em;text-transform:uppercase}
+h3{font-size:18px;font-weight:800;line-height:1.3}
+.sec-head{display:grid;gap:10px}
+.lead{color:var(--ink2);max-width:66ch}
+.muted{color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+/* фирменная строка */
+.brandbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.mark{width:32px;height:32px;border-radius:9px;background:var(--brand);display:grid;place-items:center;flex:none;box-shadow:var(--glow)}
+.mark svg{width:20px;height:20px;fill:var(--on-brand)}
+.bname{font-weight:800;letter-spacing:-.03em;font-size:16px}
+.bsite{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* шапка */
+.top{display:grid;gap:26px}
+.top h1{font-family:var(--f-display);font-weight:800;font-size:clamp(31px,7.4vw,64px);line-height:1.02;letter-spacing:-.025em;text-transform:uppercase}
+.top h1 .acc{color:var(--accent);text-shadow:var(--glow);display:block}
+.top .lede{max-width:62ch;color:var(--ink2);font-size:18px}
+.stamp{border:1px solid var(--line2);background:var(--paper);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));font-size:13.5px;max-width:680px}
+.stamp>div{border-right:1px solid var(--line);padding:10px 14px;min-width:0;display:grid;gap:2px}
+.stamp>div:last-child{border-right:0}
+.stamp b{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:400}
+@media (max-width:560px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(2){border-right:0}.stamp>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+.nav{display:flex;flex-wrap:wrap;gap:8px;font-size:14px}
+.nav a{padding:6px 14px;border:1px solid var(--line2);border-radius:999px;text-decoration:none;color:var(--ink2);font-weight:600}
+.nav a:hover{border-color:var(--accent);color:var(--accent)}
+
+/* коротко */
+.brief{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.brief{grid-template-columns:minmax(0,1fr)}}
+.brief>div{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:20px 22px;display:grid;gap:8px;align-content:start}
+.brief .k{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.brief .v{font-size:20px;font-weight:800;line-height:1.25;letter-spacing:-.01em}
+.brief p{color:var(--ink2);font-size:15.5px}
+.brief .alert{border-color:var(--red);background:var(--red-soft)}
+.brief .alert .v{color:var(--red)}
+
+/* сильные и слабые */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+@media (max-width:720px){.two{grid-template-columns:minmax(0,1fr)}}
+.col{display:grid;gap:12px;align-content:start;min-width:0}
+.col h3{display:flex;gap:10px;align-items:center}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}
+.dot.g{background:var(--green);box-shadow:var(--glow)} .dot.r{background:var(--red)}
+.items{list-style:none;padding:0;display:grid;gap:10px}
+.items li{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:13px 16px;font-size:15.5px;color:var(--ink2)}
+.items li strong{color:var(--ink);display:block;font-size:16px;font-weight:800;margin-bottom:2px}
+
+.cmp{width:100%;border-collapse:separate;border-spacing:0;font-size:15px;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.cmp th,.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.cmp thead th{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;background:var(--accent-soft)}
+.cmp td.n{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:800}
+.cmp tr:last-child td{border-bottom:0}
+.look{display:grid;gap:12px}
+.cmp.plan td{font-size:14.5px;color:var(--ink2)}
+.cmp.plan td.n{white-space:nowrap;color:var(--ink)}
+.tracks{display:grid;gap:14px}
+.trk{display:grid;gap:6px;min-width:0}
+.trk .lbl{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.trk .lbl::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c);flex:none}
+.trk.start,.trk.ux{--c:var(--accent)} .trk.txt{--c:var(--ink2)} .trk.ix{--c:var(--violet)} .trk.ads{--c:var(--amber)} .trk.must{--c:var(--red)} .trk.seo{--c:var(--line2)}
+.ixg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.ixg{grid-template-columns:minmax(0,1fr)}}
+.ixg>div{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:16px 18px;display:grid;gap:6px;align-content:start;min-width:0}
+.ixg .t{font-weight:800;font-size:17px}
+.ixg p{font-size:15px;color:var(--ink2)}
+.ixg .where{font-family:var(--f-mono);font-size:12px;color:var(--violet)}
+.prelim{border:1px solid var(--accent);background:var(--accent-soft);border-radius:18px;padding:14px 18px;display:grid;gap:4px;max-width:720px}
+.prelim .k{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.prelim p{color:var(--ink2);font-size:15.5px}
+.tbl{overflow-x:auto;border-radius:16px}
+
+/* риск-баннер */
+.callout{border:1px solid var(--amber);background:var(--amber-soft);border-radius:20px;padding:20px 22px;display:grid;gap:8px}
+.callout .t{font-family:var(--f-mono);font-weight:700;color:var(--amber);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase}
+.callout p{color:var(--ink)}
+
+/* группы */
+.groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:820px){.groups{grid-template-columns:minmax(0,1fr)}}
+.grp{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px 18px 20px;display:grid;gap:8px;align-content:start;min-width:0}
+.grp.a{--c:var(--green);border-color:var(--accent)} .grp.b{--c:var(--amber)} .grp.v{--c:var(--muted)}
+.grp .tag{justify-self:start;font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;color:var(--c);font-weight:700;border:1px solid var(--c);border-radius:999px;padding:2px 10px}
+.grp h3{font-size:17px}
+.grp p{font-size:15px;color:var(--ink2)}
+.grp .who{font-size:14px;color:var(--ink);border-top:1px dashed var(--line2);padding-top:10px}
+
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (max-width:640px){.split{grid-template-columns:minmax(0,1fr)}}
+.split>div{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px 20px;display:grid;gap:10px;align-content:start}
+.split ul{font-size:15.5px;color:var(--ink2)}
+
+/* шкала этапов */
+.road{list-style:none;padding:0;display:grid;gap:0;position:relative}
+.stage{display:grid;grid-template-columns:118px minmax(0,1fr);gap:20px;position:relative;padding-bottom:30px}
+.stage:last-child{padding-bottom:0}
+.when{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);text-align:right;padding-top:4px;line-height:1.35}
+.when b{display:block;font-family:var(--f-display);font-weight:800;font-size:22px;color:var(--ink);letter-spacing:-.02em;text-transform:uppercase}
+.body{border-left:2px solid var(--line2);padding-left:24px;display:grid;gap:12px;position:relative;min-width:0}
+.body::before{content:"";position:absolute;left:-9px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.stage.key .body::before{background:var(--accent);box-shadow:var(--glow)}
+.body h3{font-family:var(--f-display);font-weight:800;font-size:21px;letter-spacing:-.01em}
+.body ul{font-size:15.5px;color:var(--ink2)}
+.result{background:var(--accent-soft);border:1px solid var(--accent);border-radius:16px;padding:12px 16px;display:grid;gap:4px;font-size:15.5px}
+.result .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
+@media (max-width:560px){
+  .stage{grid-template-columns:minmax(0,1fr);gap:6px}
+  .when{text-align:left;padding-left:26px}
+  .when b{display:inline;font-size:18px;margin-right:6px}
+}
+
+/* деньги */
+.money{display:grid;gap:16px}
+.total{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.total .big{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,7vw,52px);letter-spacing:-.03em;color:var(--accent);text-shadow:var(--glow)}
+.bar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.bar>div{padding:14px 16px;border-radius:16px;display:grid;gap:2px;min-width:0;font-size:14.5px}
+.bar .s1{background:var(--brand);color:var(--on-brand)}
+.bar .s2{background:var(--accent-soft);color:var(--ink);border:1px solid var(--accent)}
+.bar .s3{background:var(--paper);color:var(--ink);border:1px solid var(--line2)}
+.bar b{font-size:18px;font-weight:800}
+@media (max-width:560px){.bar{grid-template-columns:minmax(0,1fr)}}
+.extra{background:var(--paper);border:1px dashed var(--line2);border-radius:20px;padding:16px 20px;display:grid;gap:8px}
+.extra ul{font-size:15.5px;color:var(--ink2)}
+
+/* решения */
+.asks{list-style:none;padding:0;display:grid;gap:10px;counter-reset:a}
+.asks li{counter-increment:a;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:13px 16px}
+.asks li::before{content:counter(a);font-family:var(--f-mono);font-weight:700;font-size:14px;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--brand);color:var(--on-brand)}
+.asks.later li::before{background:var(--paper2);color:var(--muted)}
+.asks strong{display:block;font-weight:800}
+.asks span{color:var(--ink2);font-size:15.5px}
+
+/* риски */
+.risks{display:grid;gap:10px}
+.risk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:4px 20px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:15px 18px}
+.risk b{font-weight:800;display:flex;gap:10px;align-items:baseline}
+.risk b::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red);flex:none;transform:translateY(-1px)}
+.risk span{color:var(--ink2);font-size:15.5px}
+@media (max-width:640px){.risk{grid-template-columns:minmax(0,1fr)}}
+
+.reuse{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:720px){.reuse{grid-template-columns:minmax(0,1fr)}}
+.reuse>div{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;gap:4px;align-content:start}
+.reuse .n{font-family:var(--f-display);font-weight:800;font-size:30px;letter-spacing:-.02em;color:var(--accent)}
+.reuse p{font-size:15px;color:var(--ink2)}
+
+footer{border-top:1px solid var(--line);padding-top:24px;font-size:14px;color:var(--muted);display:grid;gap:8px}
+footer .brandbar{border:0;padding:0 0 6px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<header class="top">
+  <div class="brandbar">
+    <a class="brand" href="https://seoagency.ge/" aria-label="THE KURMAZ METHOD, seoagency.ge"><span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span><span class="bname">THE KURMAZ METHOD</span></a>
+    <span class="bsite">SEO AGENCY.GE</span>
+  </div>
+  <div class="eyebrow">gidraros.ru · SEO и Яндекс.Директ · версия для владельца</div>
+  <h1>План продвижения <span class="acc">gidraros.ru</span></h1>
+  <p class="lede">Как за год сделать gidraros.ru сайтом, который приносит заявки из поиска и из рекламы и при этом не мешает Гидроимпорту. Здесь главное: этапы, деньги, результат и решения, которые нужны от вас. Подробный план с задачами для команды ведётся отдельно.</p>
+  <div class="stamp">
+    <div><b>Документ</b>Предварительный план на 12 месяцев</div>
+    <div><b>Для кого</b>Владелец</div>
+    <div><b>Версия</b>2.2 · 13.10.2026</div>
+    <div><b>Подготовил</b>А. Курмаз, SEO AGENCY.GE</div>
+  </div>
+  <div class="prelim">
+    <span class="k">Предварительная версия</span>
+    <p>Это предварительный разбор сайта и план. После полного аудита сайта мы подробно распишем, что требует доработок и изменений, и дополним план.</p>
+  </div>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#brief">Коротко</a><a href="#start">Сайт сейчас</a><a href="#two">Два сайта</a><a href="#road">Этапы</a><a href="#money">Деньги</a><a href="#asks">Что нужно от вас</a><a href="#risks">Риски</a><a href="#base">Опыт Гидроимпорта</a>
+  </nav>
+</header>
+
+<section id="brief">
+  <div class="sec-head"><div class="eyebrow">Коротко</div><h2>Главное за минуту</h2></div>
+  <div class="brief">
+    <div>
+      <div class="k">Цель</div>
+      <div class="v">Больше мест в выдаче Яндекса и больше продаж</div>
+      <p>По части запросов в выдаче стоят оба ваших сайта. По своим товарам gidraros продвигается сам, и там он сильнее Гидроимпорта.</p>
+    </div>
+    <div>
+      <div class="k">Стоимость работы</div>
+      <div class="v num">120&nbsp;000&nbsp;₽ в месяц</div>
+      <p>SEO 80&nbsp;000&nbsp;₽ и Директ 40&nbsp;000&nbsp;₽. Доработки сайта входят в эту сумму. Деньги на саму рекламу платятся Яндексу отдельно: на старте 20&nbsp;000&nbsp;₽ в месяц.</p>
+    </div>
+    <div>
+      <div class="k">Сроки</div>
+      <div class="v">Реклама с первого месяца, окупаемость к 3–4-му</div>
+      <p>Месяц 1: сайт готов к рекламе, Директ запущен. Месяц 2: реклама окупает себя. Месяцы 3–4: прибыль с сайта покрывает все затраты на продвижение. Дальше рост.</p>
+    </div>
+    <div class="alert">
+      <div class="k">Первое условие</div>
+      <div class="v">Сначала привести сайт в порядок</div>
+      <p>Сейчас Яндекс не пропустит рекламу gidraros: на сайте нет реквизитов компании и политики персональных данных. Это первая доработка.</p>
+    </div>
+  </div>
+</section>
+
+<section id="start">
+  <div class="sec-head">
+    <div class="eyebrow">С чего начинаем</div>
+    <h2>Сайт сейчас: что сильное и что мешает продавать</h2>
+    <p class="lead">Сайт проверен трижды: 1 сентября, 1 и 9 октября. У gidraros есть то, чего нет у Гидроимпорта, но несколько проблем закрывают дорогу и рекламе, и поиску.</p>
+  </div>
+  <div class="two">
+    <div class="col">
+      <h3><span class="dot g"></span>Сильное, сохраняем</h3>
+      <ul class="items">
+        <li><strong>Чертежи почти на каждой карточке</strong>703 карточки из 721. У Гидроимпорта чертежи есть только на 12&nbsp;% карточек.</li>
+        <li><strong>Цены на сайте</strong>Цена указана почти у всех товаров. Покупатель, который сравнивает поставщиков, видит её сразу.</li>
+        <li><strong>175 моделей есть только у gidraros</strong>Насосы ПСМ, редкие Rexroth, УНА.</li>
+        <li><strong>Свой спрос</strong>На gidraros заметно чаще приходят за распределителями, насосами-дозаторами и ТНВД, чем на Гидроимпорт.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3><span class="dot r"></span>Мешает, исправляем первым</h3>
+      <ul class="items">
+        <li><strong>Нет реквизитов продавца</strong>Юрлица, ИНН и ОГРН нет нигде на сайте. Это нарушает правила дистанционной продажи, и Директ не пройдёт модерацию.</li>
+        <li><strong>Нет политики персональных данных</strong>Формы собирают телефоны и почту без согласия. Это нарушение 152-ФЗ и риск штрафа.</li>
+        <li><strong>Шапка не помогает найти товар и связаться</strong>На телефоне в ней только логотип и телефоны. Поиска и мессенджеров не видно, а каталог — облако из 22 ссылок под шапкой.</li>
+        <li><strong>На телефоне цена на пятом экране</strong>Цену и кнопку «В корзину» покупатель видит только после долгой прокрутки.</li>
+        <li><strong>Статистика врёт</strong>Метрика считает каждый просмотр дважды и не видит заявок. Управлять рекламой по таким цифрам нельзя.</li>
+        <li><strong>Поиск плохо понимает сайт</strong>У главной пустой заголовок, ни у одной из 878 страниц нет описания для выдачи, часть товаров в категориях недоступна поисковику.</li>
+        <li><strong>Ненастоящие скидки</strong>У 110 карточек зачёркнутая цена равна новой. Объявления с такими «скидками» модерацию не проходят.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tbl">
+    <table class="cmp">
+      <thead><tr><th>Сравнение</th><th>gidraros.ru</th><th>gidroimport.ru</th></tr></thead>
+      <tbody>
+        <tr><td>Товаров на сайте</td><td class="n">721</td><td class="n">1&nbsp;322</td></tr>
+        <tr><td>Карточек с чертежами</td><td class="n">98&nbsp;%</td><td class="n">12&nbsp;%</td></tr>
+        <tr><td>Текста на карточке, обычно</td><td class="n">59 слов</td><td class="n">≈780 слов</td></tr>
+        <tr><td>В первой десятке Яндекса по 22 контрольным запросам</td><td class="n">4</td><td class="n">11</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="two">
+  <div class="sec-head">
+    <div class="eyebrow">Два сайта одного владельца</div>
+    <h2>Как занять два места и не потерять оба</h2>
+  </div>
+  <div class="callout">
+    <div class="t">Главный риск проекта</div>
+    <p>Правила Яндекса прямо запрещают занимать выдачу несколькими сайтами одного владельца с одинаковыми товарами, и разные юрлица от этого не защищают. Если Яндекс сочтёт сайты одним, в поиске останется один из них. В рекламе объявления будут показываться по очереди, а цена клика вырастет для обоих сайтов.</p>
+    <p>Поэтому два места по общим запросам — возможность, а не гарантия. Защищает только настоящее различие сайтов. Пока Яндекс их не объединяет: по замеру в июне по 9 запросам оба сайта одновременно стояли в первой десятке.</p>
+  </div>
+
+  <h3>Предлагаем поделить запросы на три группы</h3>
+  <div class="groups">
+    <div class="grp a">
+      <div class="tag">А · ВЕДЁТ GIDRAROS</div>
+      <h3>Свои товары gidraros</h3>
+      <p>Гидрораспределители, отечественные насосы-дозаторы для МТЗ и ЮМЗ, ТНВД Д-240/245, насосы ПСМ 410/210/416, агрегаты и УНА, редкие Rexroth.</p>
+      <p>Спрос большой: распределители ищут около 49&nbsp;000 раз в месяц, насосы-дозаторы — около 19&nbsp;000.</p>
+      <div class="who">Поиск и реклама. Гидроимпорт эти разделы не расширяет.</div>
+    </div>
+    <div class="grp b">
+      <div class="tag">Б · ОБА САЙТА</div>
+      <h3>Общие ходовые товары</h3>
+      <p>ГСТ-90, НП-90, МП-90, гидромоторы Danfoss OMR/OMS, массовые Rexroth, МГП, ПСМ 310, «купить гидромотор». Около 30 главных запросов.</p>
+      <div class="who">Только поиск: разные страницы и разная подача. В рекламе здесь gidraros не участвует.</div>
+    </div>
+    <div class="grp v">
+      <div class="tag">В · ТОЛЬКО ГИДРОИМПОРТ</div>
+      <h3>Поле Гидроимпорта</h3>
+      <p>Китайские гидромоторы BMR/BMS, Parker, ПСМ 313/303/413, часть Rexroth и Sauer, запросы с названием Гидроимпорта.</p>
+      <div class="who">gidraros сюда не заходит.</div>
+    </div>
+  </div>
+
+  <div class="split">
+    <div>
+      <h3>У каждого сайта своё</h3>
+      <ul>
+        <li>Реквизиты, договор, счета.</li>
+        <li>Контакты и карточка в Яндекс Бизнесе.</li>
+        <li>Аккаунты Яндекса (реклама, статистика, Вебмастер) на юрлицо gidraros.</li>
+        <li>Тексты, заголовки и картинки на страницах.</li>
+        <li>Никаких ссылок между сайтами.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Общее, и это нормально</h3>
+      <ul>
+        <li>Склад и поставщики.</li>
+        <li>Внутренняя база: чертежи, аналоги, на какую технику подходит деталь, документы.</li>
+        <li>Команда, исследования спроса и инструменты.</li>
+      </ul>
+      <p class="muted" style="font-size:15px">Каждую неделю проверяем 60 контрольных запросов по обоим сайтам. При первом признаке объединения уводим второй сайт со спорного запроса.</p>
+    </div>
+  </div>
+</section>
+
+<section id="road">
+  <div class="sec-head">
+    <div class="eyebrow">Этапы</div>
+    <h2>Год работы, пять вех</h2>
+    <p class="lead">Порядок тот же, что сработал на Гидроимпорте: сначала доступы, замер и аудит, потом сайт готовим к рекламе, затем запускаем Директ и наполняем сайт для поиска волнами. В конце каждого этапа есть результат, который вы можете проверить.</p>
+  </div>
+  <div class="look">
+    <h3>Доработка сайта по месяцам</h3>
+    <p class="lead">Сайт дорабатываем тремя блоками, по одному в месяц. Внешний вид меняется на всех типах страниц, параллельно идут контент и интерактивные элементы.</p>
+    <div class="tbl">
+      <table class="cmp plan">
+        <thead><tr><th>Когда</th><th>Вид и удобство (UX/UI)</th><th>Контент</th><th>Интерактив</th></tr></thead>
+        <tbody>
+          <tr><td class="n">Месяц 1</td><td>Шапка с поиском, каталогом и кнопками связи. Чат. Цена и кнопка на первом экране телефона. Заявка на счёт.</td><td>Свои заголовки вместо 59 общих с Гидроимпортом. Без обещаний, которые нечем подтвердить.</td><td class="muted">—</td></tr>
+          <tr><td class="n">Месяц 2</td><td>Главная. Служебные страницы: контакты, о компании, доставка, оплата, гарантия.</td><td class="muted">—</td><td class="muted">—</td></tr>
+          <tr><td class="n">Месяц 3</td><td>Разделы каталога и карточки товаров. Формы под задачу покупателя.</td><td>Свой текст вместо заводского на 297 карточках.</td><td>Подбор по технике, просмотр чертежа.</td></tr>
+          <tr><td class="n">Дальше</td><td>Правки по тому, как ведут себя покупатели.</td><td>Страницы под точные артикулы, статьи, документы.</td><td>Ещё 2–3 элемента по спросу.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <ol class="road">
+    <li class="stage">
+      <div class="when"><b>Нед. 1–2</b>месяц 1</div>
+      <div class="body">
+        <h3>Старт, замер и аудит</h3>
+        <div class="tracks">
+          <div class="trk start"><span class="lbl">Замер</span><ul>
+            <li>Получаем доступы к сайту, хостингу и сервисам Яндекса.</li>
+            <li>Фиксируем точку отсчёта: позиции, трафик, заявки, продажи.</li>
+            <li>Настраиваем учёт заявок и проверяем каждую цель тестовой заявкой.</li>
+          </ul></div>
+          <div class="trk ux"><span class="lbl">Аудит сайта</span><ul>
+            <li>Полный аудит: техника, скорость, вид и удобство на телефоне и компьютере, тексты. По итогам дополняем этот план подробным списком доработок.</li>
+          </ul></div>
+        </div>
+        <div class="result"><span class="k">Вы увидите</span>Отчёт №&nbsp;1: где сайт сейчас. От этой точки считаем весь результат.</div>
+      </div>
+    </li>
+    <li class="stage key">
+      <div class="when"><b>Месяц 1</b>недели 3–4</div>
+      <div class="body">
+        <h3>Сайт готов к рекламе, Директ запущен</h3>
+        <div class="tracks">
+          <div class="trk ux"><span class="lbl">Вид и удобство (UX/UI)</span><ul>
+            <li>Новая шапка — одна из первых правок: поиск по каталогу с артикулом, кнопка каталога вместо облака из 22 ссылок, телефон, WhatsApp и Telegram, заказ звонка. На телефоне шапка компактная и закреплена сверху.</li>
+            <li>Карточка на телефоне: цена, наличие и кнопка «В корзину» на первом экране, а не на пятом.</li>
+            <li>Чат Jivo: оплачиваем и настраиваем. Обращения доходят до менеджера, кнопка чата не закрывает корзину.</li>
+            <li>Оформление заказа как заявка на счёт: поля «компания» и «ИНН», понятный экран «Заявка принята».</li>
+          </ul></div>
+          <div class="trk must"><span class="lbl">Обязательное</span><ul>
+            <li>Реквизиты компании, политика персональных данных и согласия в формах, исправленная статистика.</li>
+          </ul></div>
+          <div class="trk txt"><span class="lbl">Контент</span><ul>
+            <li>Свои заголовки страниц: сейчас 59 одинаковых с Гидроимпортом.</li>
+            <li>Убираем обещания без подтверждения: «самые низкие цены», «100% гарантия».</li>
+          </ul></div>
+          <div class="trk ads"><span class="lbl">Реклама и площадки</span><ul>
+            <li>Запускаем Директ по товарам группы А, бюджет 20&nbsp;000&nbsp;₽.</li>
+            <li>Карточки gidraros в Яндекс Бизнесе и 2ГИС.</li>
+          </ul></div>
+        </div>
+        <div class="result"><span class="k">Вы увидите</span>Реклама показывается, каждая заявка учтена с источником. Отчёт №&nbsp;2.</div>
+      </div>
+    </li>
+    <li class="stage key">
+      <div class="when"><b>Месяц 2</b></div>
+      <div class="body">
+        <h3>Реклама выходит в ноль</h3>
+        <div class="tracks">
+          <div class="trk ux"><span class="lbl">Вид и удобство (UX/UI)</span><ul>
+            <li>Новая главная: в первом экране — что продаём, поиск и входы в разделы группы А: распределители, насосы-дозаторы, ТНВД, ПСМ.</li>
+            <li>Служебные страницы в едином стиле: контакты с Яндекс Картой и реквизитами, о компании, доставка, оплата, гарантия.</li>
+          </ul></div>
+          <div class="trk seo"><span class="lbl">Для поиска</span><ul>
+            <li>Сайт понятен поисковику: все товары доступны по ссылкам, рабочая карта сайта, у каждой страницы своё описание для выдачи.</li>
+          </ul></div>
+          <div class="trk ads"><span class="lbl">Реклама</span><ul>
+            <li>Чистим рекламу от лишних запросов, бюджет 30&nbsp;000&nbsp;₽.</li>
+          </ul></div>
+        </div>
+        <div class="result"><span class="k">Вы увидите</span>Реклама окупает себя. Разделы группы А появились в поиске.</div>
+      </div>
+    </li>
+    <li class="stage key">
+      <div class="when"><b>Мес. 3–4</b></div>
+      <div class="body">
+        <h3>Окупаемость</h3>
+        <div class="tracks">
+          <div class="trk ux"><span class="lbl">Вид и удобство (UX/UI)</span><ul>
+            <li>Новая карточка товара: сверху цена, наличие, срок и кнопки, ниже чертежи, характеристики, техника, на которую подходит деталь, аналоги, документы, доставка и оплата.</li>
+            <li>Новый вид разделов каталога: плитка с ценой, наличием и кнопкой, переход по сериям.</li>
+            <li>Формы под задачу покупателя: «Подобрать по технике», «Нужен аналог», «Счёт на юрлицо».</li>
+            <li>Страницы доверия: отзывы, документы и сертификаты, фото склада.</li>
+          </ul></div>
+          <div class="trk ix"><span class="lbl">Интерактив</span><ul>
+            <li>Первые интерактивные элементы: подбор детали по технике и просмотр чертежа с увеличением. Подробнее — ниже.</li>
+          </ul></div>
+          <div class="trk txt"><span class="lbl">Контент</span><ul>
+            <li>Свой текст вместо заводского, который сейчас одинаков на двух сайтах: 297 карточек.</li>
+            <li>Карточки группы А по новому стандарту.</li>
+          </ul></div>
+          <div class="trk ads"><span class="lbl">Реклама</span><ul>
+            <li>Месяц 3 — 30&nbsp;000&nbsp;₽, дальше добавляем бюджет туда, где реклама окупается.</li>
+          </ul></div>
+        </div>
+        <div class="result"><span class="k">Вы увидите</span>Прибыль с заявок сайта покрывает затраты: 120&nbsp;000&nbsp;₽ и рекламный бюджет. Ориентиры: первая десятка по 30–50&nbsp;% запросов группы А, трафик из поиска +50&nbsp;%, заявок вдвое больше, чем в первом месяце. Квартальный отчёт.</div>
+      </div>
+    </li>
+    <li class="stage">
+      <div class="when"><b>Мес. 5–12</b></div>
+      <div class="body">
+        <h3>Рост</h3>
+        <div class="tracks">
+          <div class="trk ux"><span class="lbl">Вид и удобство (UX/UI)</span><ul>
+            <li>Правки по тому, как ведут себя покупатели: где теряются, где уходят, что не находят.</li>
+          </ul></div>
+          <div class="trk ix"><span class="lbl">Интерактив</span><ul>
+            <li>Ещё 2–3 элемента из списка ниже, в порядке спроса.</li>
+          </ul></div>
+          <div class="trk txt"><span class="lbl">Контент</span><ul>
+            <li>Все товары по новому стандарту, страницы под точные артикулы 410/210/416, статьи.</li>
+          </ul></div>
+          <div class="trk ads"><span class="lbl">Реклама и площадки</span><ul>
+            <li>Новые рекламные группы по данным об окупаемости.</li>
+            <li>Отзывы, отраслевые каталоги, упоминания. Следим, что о gidraros отвечает нейропоиск Яндекса.</li>
+          </ul></div>
+        </div>
+        <div class="result"><span class="k">Вы увидите</span>gidraros в первой десятке по большинству запросов группы А, оба сайта стабильно в выдаче по группе Б, каждый канал окупается каждый месяц.</div>
+      </div>
+    </li>
+  </ol>
+
+  <div class="look">
+    <h3>Интерактивные элементы</h3>
+    <p class="lead">Помогают покупателю выбрать деталь без звонка и отличают gidraros от других сайтов в выдаче. Предлагаем четыре, окончательный список и порядок — после аудита. Каждое действие покупателя в них учитывается в статистике.</p>
+    <div class="ixg">
+      <div><span class="t">Подбор по технике</span><p>Покупатель выбирает машину (МТЗ, ЮМЗ и другие), сайт показывает подходящие распределители, насосы-дозаторы и ТНВД из каталога.</p><span class="where">Главная, разделы группы А · месяц 3</span></div>
+      <div><span class="t">Просмотр чертежа</span><p>Чертёж на карточке открывается крупно, с увеличением, нужная строка таблицы выделена. Чертежи — главное отличие gidraros: они есть на 98&nbsp;% карточек.</p><span class="where">Карточка товара · месяц 3</span></div>
+      <div><span class="t">Расшифровка артикула</span><p>Покупатель вводит код с шильдика насоса ПСМ 410/210/416, сайт объясняет, что означает каждая часть кода, и показывает товар.</p><span class="where">Разделы ПСМ, поиск · месяцы 5–12</span></div>
+      <div><span class="t">Сравнение моделей</span><p>Таблица характеристик соседних моделей серии, например Р-80, Р-100 и Р-160, чтобы выбрать без звонка менеджеру.</p><span class="where">Разделы и карточки · месяцы 5–12</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="money">
+  <div class="sec-head">
+    <div class="eyebrow">Деньги</div>
+    <h2>Из чего складывается 120&nbsp;000&nbsp;₽</h2>
+  </div>
+  <div class="money">
+    <div class="total"><span class="big num">120&nbsp;000&nbsp;₽</span><span class="muted">в месяц, 160 часов работы команды</span></div>
+    <div class="bar">
+      <div class="s1"><b class="num">40&nbsp;000&nbsp;₽</b>SEO-специалист, 40 ч: стратегия, техзадания, приёмка, отчёты</div>
+      <div class="s2"><b class="num">40&nbsp;000&nbsp;₽</b>Помощник, 80 ч: внедрение доработок, тексты, карточки</div>
+      <div class="s3"><b class="num">40&nbsp;000&nbsp;₽</b>Директолог, около 40 ч: запуск и ведение рекламы</div>
+    </div>
+    <p class="lead">Доработки сайта входят в эти часы: три блока, по одному в месяц, с первого по третий месяц.</p>
+    <div class="extra">
+      <h3>Оплачивается отдельно</h3>
+      <ul>
+        <li>Рекламный бюджет Директа, напрямую Яндексу: первый месяц 20&nbsp;000&nbsp;₽, следующие два — по 30&nbsp;000&nbsp;₽, дальше по результатам.</li>
+        <li>Тариф чата Jivo на сайте.</li>
+        <li>Платные сервисы, если понадобятся: программа для проверки сайта, коллтрекинг.</li>
+        <li>Крупные доработки сверх трёх блоков: новые функции, замена шаблона сайта 2017 года.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="asks">
+  <div class="sec-head">
+    <div class="eyebrow">Что нужно от вас</div>
+    <h2>Без этого работа не начнётся</h2>
+    <p class="lead">Первые три пункта нужны в первые две недели. Остальные — решения на первый месяц.</p>
+  </div>
+  <ol class="asks">
+    <li><div><strong>Юрлицо, ИНН и ОГРН gidraros для сайта</strong><span>Без них не запустить рекламу и не выполнить закон о дистанционной продаже.</span></div></li>
+    <li><div><strong>Доступы</strong><span>Сайт, хостинг REG.RU, Метрика, Вебмастер. И как дальше работаем со сторонними разработчиками сайта.</span></div></li>
+    <li><div><strong>Рекламный бюджет Директа</strong><span>Старт — 20&nbsp;000&nbsp;₽ в месяц, следующие два месяца — по 30&nbsp;000&nbsp;₽. Дальше корректируем: находим основные прибыльные направления и усиливаем их.</span></div></li>
+  </ol>
+  <ol class="asks later" start="4" style="counter-reset:a 3">
+    <li><div><strong>Позиционирование gidraros</strong><span>Предлагаем «гидравлика для сельхоз- и спецтехники»: распределители, рули, ТНВД, ПСМ 210/410 и чертежи на каждой карточке.</span></div></li>
+    <li><div><strong>Разводить ли цены</strong><span>Из 349 общих моделей, у которых цена есть на обоих сайтах, 167 стоят рубль в рубль. Для Яндекса это признак того, что сайты связаны.</span></div></li>
+    <li><div><strong>Зачёркнутые цены</strong><span>Они стоят на 611 карточках. Предлагаем оставить только настоящие скидки.</span></div></li>
+    <li><div><strong>Чат на сайте</strong><span>Оплатить тариф Jivo. Аккаунт чата нужен на gidraros, отдельный от Гидроимпорта.</span></div></li>
+    <li><div><strong>Внешний вид</strong><span>Хватит ли поэтапного обновления (шапка, главная, разделы каталога, карточки товаров, служебные страницы) или нужен новый дизайн.</span></div></li>
+  </ol>
+</section>
+
+<section id="risks">
+  <div class="sec-head"><div class="eyebrow">Риски</div><h2>Что может сорвать план и что мы делаем</h2></div>
+  <div class="risks">
+    <div class="risk"><b>Яндекс посчитает два сайта одним</b><span>Разводим сайты по правилам выше, держим короткий список общих запросов, проверяем каждую неделю. При тревоге уходим со спорного запроса.</span></div>
+    <div class="risk"><b>Реклама двух сайтов перебивает друг друга</b><span>gidraros рекламирует только группу А. В кампаниях обоих сайтов исключаем запросы друг друга.</span></div>
+    <div class="risk"><b>Доступы неполные, сайт делали сторонние разработчики</b><span>От доступа зависит первый блок доработок. В первые две недели выясняем, кто и как меняет сайт.</span></div>
+    <div class="risk"><b>Нет данных о продажах</b><span>Без ежемесячных цифр окупаемость не доказать. Учёт заявок ставим в первый месяц.</span></div>
+  </div>
+</section>
+
+<section id="base">
+  <div class="sec-head">
+    <div class="eyebrow">Опыт Гидроимпорта</div>
+    <h2>Полгода работы, за которые не нужно платить второй раз</h2>
+    <p class="lead">С апреля по октябрь для Гидроимпорта собраны данные, методики и инструменты. Они переходят на gidraros, поэтому старт быстрее. Тексты не переносим: у gidraros они свои.</p>
+  </div>
+  <div class="reuse">
+    <div><span class="n num">10&nbsp;000+</span><p>поисковых запросов по гидравлике уже собраны и разобраны по группам</p></div>
+    <div><span class="n num">1&nbsp;350</span><p>чертежей в общей базе и 4&nbsp;523 связи «насос → техника»</p></div>
+    <div><span class="n num">16</span><p>правил, которые на Гидроимпорте ввели поздно, здесь действуют с первого дня</p></div>
+  </div>
+  <ul class="lead">
+    <li>Замеряем до изменений, иначе эффект нечем доказать.</li>
+    <li>Каждую цель статистики проверяем живой заявкой до запуска рекламы. У Гидроимпорта Директ насчитал 1&nbsp;323 конверсии, а настоящих было 159.</li>
+    <li>Учитываем заявки с источником с первого месяца.</li>
+  </ul>
+</section>
+
+<footer>
+  <div class="brandbar">
+    <a class="brand" href="https://seoagency.ge/"><span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span><span class="bname">THE KURMAZ METHOD</span></a>
+    <a class="bsite" href="https://seoagency.ge/">seoagency.ge</a>
+  </div>
+  <div>Версия 2.2 для владельца, 13.10.2026. Сделана из подробного плана для команды (версия 1.1): смысл и цифры те же, детали задач опущены.</div>
+  <div>Данные по gidraros.ru: проверка сайта 01.09, сравнение каталогов 01.10, проверка 09.10. Пункты со словом «предлагаем» ждут вашего решения.</div>
+  <div>План предварительный: после полного аудита сайта он будет дополнен подробным списком доработок и изменений.</div>
+</footer>
+
+</div>
+</body>
+</html>
